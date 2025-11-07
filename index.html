@@ -3,39 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>رزومه مهندس ساسان نریمان نژاد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     html, body {
-      height: 100%;
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f5f5f5;
-      font-family: sans-serif;
-      color: #333;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
     }
     iframe {
       width: 100%;
-      height: 100vh;
+      height: 100%;
       border: none;
     }
   </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-      if (isIOS) {
-        // در iOS، پی‌دی‌اف در تب جدا باز میشه
-        window.location.href = "Sassan Resume.pdf";
-      } else {
-        // در اندروید، پی‌دی‌اف در iframe باز میشه
-        const iframe = document.createElement("iframe");
-        iframe.src = "Sassan Resume.pdf";
-        document.body.appendChild(iframe);
-      }
-    });
-  </script>
 </head>
 <body>
-  <p>در حال بارگذاری رزومه...</p>
+  <iframe 
+    src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/Sunnecta/Sasan.Resume/Sassan Resume.pdf">
+  </iframe>
 </body>
 </html>
